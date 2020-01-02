@@ -1,0 +1,6 @@
+C:\My Work\Web Engineering Project\Mobile Store\Mobile Store\bin\Mobile Store.dll.config
+C:\My Work\Web Engineering Project\Mobile Store\Mobile Store\bin\Mobile Store.dll
+C:\My Work\Web Engineering Project\Mobile Store\Mobile Store\bin\Mobile Store.pdb
+C:\My Work\Web Engineering Project\Mobile Store\Mobile Store\obj\Debug\Mobile Store.csprojAssemblyReference.cache
+C:\My Work\Web Engineering Project\Mobile Store\Mobile Store\obj\Debug\Mobile Store.dll
+C:\My Work\Web Engineering Project\Mobile Store\Mobile Store\obj\Debug\Mobile Store.pdb
