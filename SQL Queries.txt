@@ -1,0 +1,12 @@
+create database Mobile_Database;
+
+use Mobile_Database;
+
+create table tblLogin
+(
+UID int identity(1,1) Primary Key,
+Username varchar(20) unique,
+Password varchar(20)
+);
+
+insert into tblLogin values('umershaikh','12345');
