@@ -10,3 +10,26 @@ Password varchar(20)
 );
 
 insert into tblLogin values('umershaikh','12345');
+
+create table tblRecords
+(
+MID int identity(600,1) Primary Key,
+CustomerName varchar(30),
+PhoneNo varchar(30),
+MobileName varchar(30),
+Price int,
+ModelNo varchar(30),
+BlueTooth varchar(5),
+FMRadio varchar(5),
+Camera varchar(5),
+WiFi varchar(5),
+isDeleted varchar(5)
+);
+
+insert into tblRecords values('Mr. Ahmed Khan','0300-1234567','NOKIA 3310',5200,'AB-3310','NO','YES','NO','NO','NO');
+insert into tblRecords values('Mr. Kashif Ali','0333-1234567','NOKIA E-90',8600,'XY-E90','NO','YES','NO','NO','NO');
+insert into tblRecords values('Mr. Tanveer','0345-1234567','NOKIA N-70',9100,'ZS-N70','NO','YES','YES','YES','NO');
+insert into tblRecords values('Mr. Iqbal Ahmed','0321-1234567','Samsung-Note1',18000,'NOTE-1550','YES','YES','YES','YES','NO');
+insert into tblRecords values('Mr. Ziauddin','0332-1234567','Samsung-Note2',22000,'NOTE-1650','YES','YES','YES','YES','NO');
+insert into tblRecords values('Mr. Zubair Ali','0334-1234567','Apple-iPhone4s',17500,'Digit-4S','YES','NO','YES','NO','NO');
+insert into tblRecords values('Mr. Intizaar','0334-1234567','Apple-iPhone5s',21000,'Digit-5S','YES','NO','YES','NO','NO');
