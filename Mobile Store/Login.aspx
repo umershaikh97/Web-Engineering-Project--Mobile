@@ -5,34 +5,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Mobile Store</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" runat="server" media="screen" href="~/css/styles.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <div>
-    <table border="1" cellpadding="0" cellspacing="5" align="center">
-   
-   <tr>
-   <td bgcolor="LightGreen">Username: </td>
-   <td><asp:TextBox ID="txtUName" runat="server" Required></asp:TextBox></td>
-   </tr>
-   
-   <tr>
-   <td bgcolor="LightGreen">Password</td>
-   <td><asp:TextBox ID="txtPass" TextMode="Password" runat="server" Required></asp:TextBox></td>
-   </tr>
+        <div class="root">
 
-   <tr>
+    <h1 class="display-4 headingMain">Welcome to Mobile Store</h1>
 
-   <td colspan=2><asp:Button ID="btnLogin" runat="server" Text="Login" 
-           onclick="btnLogin_Click" /></td>
-   </tr>
-
-   </table>  
-
+    <div class="loginContainer">
+        <div class="formWrapper">
+  <div class="form-group">
+    <label for="txtUName">Username</label>
+      <asp:TextBox class="form-control" ID="txtUName" runat="server" Required="true"></asp:TextBox>
+  </div>
+  <div class="form-group">
+    <label for="txtPass">Password</label>
+            <asp:TextBox class="form-control" ID="txtPass" TextMode="Password" runat="server" Required="true"></asp:TextBox>
+  </div>
+            </div>
+       <span id="errorContainer" runat="server"></span>
+  <asp:Button class="btn btn-primary formWrapper" ID="btnLogin" runat="server" Text="Login"  onclick="btnLogin_Click"/>
     </div>
-        </div>
-    </form>
+            </div>
+        </form>
 </body>
 </html>
 

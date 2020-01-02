@@ -14,9 +14,6 @@ namespace Mobile_Store
         protected void Page_Load(object sender, EventArgs e)
         {
             xConn = new SqlConnection("Server=.; DataBase=Mobile_Database; Trusted_Connection=True;");
-            xConn.Open();
-            Response.Write("Database done");
-            xConn.Close();
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -25,12 +22,11 @@ namespace Mobile_Store
             new SqlDataAdapter("Select * from tblLogin where Username='" + txtUName.Text + "' and Password='" + txtPass.Text + "'", xConn).Fill(table);
             if (table.Rows.Count == 1)
             {
-                Response.Write("Success");
-               // Response.Redirect("Home.aspx");
+                Response.Redirect("Home.aspx");
             }
             else
             {
-                Response.Write("Error while Logging In with the provided credentials");
+               errorContainer.Controls.Add(new LiteralControl("<p>Error logging in with provided credentials</p>"));
             }
         }
     }
