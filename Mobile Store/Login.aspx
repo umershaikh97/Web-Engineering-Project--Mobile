@@ -12,24 +12,24 @@
     <form id="form1" runat="server">
         <div class="root">
 
-    <h1 class="display-4 headingMain">Welcome to Mobile Store</h1>
+            <h1 class="display-4 headingMain">Welcome to Mobile Store</h1>
 
-    <div class="loginContainer">
-        <div class="formWrapper">
-  <div class="form-group">
-    <label for="txtUName">Username</label>
-      <asp:TextBox class="form-control" ID="txtUName" runat="server" Required="true"></asp:TextBox>
-  </div>
-  <div class="form-group">
-    <label for="txtPass">Password</label>
-            <asp:TextBox class="form-control" ID="txtPass" TextMode="Password" runat="server" Required="true"></asp:TextBox>
-  </div>
+            <div class="loginContainer">
+                <div class="formWrapper">
+                    <div class="form-group">
+                        <label for="txtUName">Username</label>
+                        <asp:TextBox class="form-control" ID="txtUName" runat="server" Required="true"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPass">Password</label>
+                        <asp:TextBox class="form-control" ID="txtPass" TextMode="Password" runat="server" Required="true"></asp:TextBox>
+                    </div>
+                </div>
+                <span id="errorContainer" runat="server"></span>
+                <asp:Button class="btn btn-primary formWrapper" ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
             </div>
-       <span id="errorContainer" runat="server"></span>
-  <asp:Button class="btn btn-primary formWrapper" ID="btnLogin" runat="server" Text="Login"  onclick="btnLogin_Click"/>
-    </div>
-            </div>
-        </form>
+        </div>
+    </form>
 </body>
 </html>
 
