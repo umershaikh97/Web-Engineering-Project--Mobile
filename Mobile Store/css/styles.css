@@ -1,0 +1,46 @@
+﻿.loginContainer {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 13px 0px;
+    border-radius: 50px;
+    background-color: #ECECEC;
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.formWrapper{
+    width: 60%;
+}
+
+body {
+    background-color: #B2B2B2;
+}
+
+#form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingMain{
+    margin-bottom: 35px;
+}
+
+#errorContainer{
+display: block;
+}
+
+#errorContainer > p {
+     color: red;
+     font-size: 14px;
+    }
