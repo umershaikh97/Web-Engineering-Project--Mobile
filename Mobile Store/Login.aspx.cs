@@ -18,11 +18,12 @@ namespace Mobile_Store
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            DataTable table = new DataTable();
-            new SqlDataAdapter("Select * from tblLogin where Username='" + txtUName.Text + "' and Password='" + txtPass.Text + "'", xConn).Fill(table);
-            if (table.Rows.Count == 1)
+            xConn.Open();
+            SqlDataReader sdr =  new SqlCommand("Select * from tblLogin where Username='" + txtUName.Text + "' and Password='" + txtPass.Text + "'", xConn).ExecuteReader();
+            if (sdr.Read())
             {
                 Response.Redirect("Home.aspx");
+                xConn.Close();
             }
             else
             {

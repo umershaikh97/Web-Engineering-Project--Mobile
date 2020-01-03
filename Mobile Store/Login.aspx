@@ -9,6 +9,16 @@
     <link rel="stylesheet" runat="server" media="screen" href="~/css/styles.css" />
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbarCustom">
+  <a class="navbar-brand" href="Login.aspx">Mobile Store</a>
+
+    <ul class="navbar-nav">
+              <li class="nav-item liCustom">
+        <a class="nav-link" href="Signup.aspx">Sign Up</a>
+      </li>
+                   
+    </ul>
+</nav>
     <form id="form1" runat="server">
         <div class="root">
 
