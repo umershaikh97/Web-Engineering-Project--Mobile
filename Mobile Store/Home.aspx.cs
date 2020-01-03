@@ -26,6 +26,7 @@ namespace Mobile_Store
             {
                 customerRecordHeading.InnerHtml = "No Records Available!";
             }
+            xConn.Close();
         }
 
         protected void xGrid_SelectedIndexChanged(object sender, EventArgs e)

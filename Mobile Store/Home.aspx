@@ -17,6 +17,9 @@
               <li class="nav-item liCustom">
         <a class="nav-link" href="Home.aspx">Home</a>
       </li>
+                      <li class="nav-item liCustom">
+        <a class="nav-link" href="View.aspx">Find Record</a>
+      </li>
       <li class="nav-item liCustom">
         <a class="nav-link" href="Add.aspx">Add Record</a>
       </li>
@@ -24,7 +27,10 @@
         <a class="nav-link" href="Update.aspx">Update Record</a>
       </li>
               <li class="nav-item liCustom">
-        <a class="nav-link" href="Update.aspx">Delete Record</a>
+        <a class="nav-link" href="Delete.aspx">Delete Record</a>
+      </li>
+                      <li class="nav-item liCustom">
+        <a class="nav-link" href="Login.aspx">Log out</a>
       </li>
     </ul>
 </nav>
