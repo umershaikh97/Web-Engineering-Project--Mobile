@@ -118,3 +118,44 @@ body {
 .homeContent{
     margin-top: 30vh;
 }
+
+.formWrapperView {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainerView {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBtn{
+    margin-top: 15px;
+}
+
+.formgroupView{
+    margin-right: 10px;
+}
+
+.formWrapperAdd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.loginContainerAdd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formgroupAdd {
+    margin-right: 10px;
+}
+
+.addBtn {
+    margin-top: 15px;
+}
