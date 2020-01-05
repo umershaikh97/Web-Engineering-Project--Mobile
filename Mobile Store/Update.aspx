@@ -42,48 +42,52 @@
 
 
         <center class="homeContent">  
+                                    <h3 id="H1" runat="server" class="display-4 headingMain">Update Record</h3>
                     <div class="loginContainerAdd">
                 <div class="formWrapperAdd">
                                         <div class="form-group formgroupAdd">
                         <label for="txtMID">MID</label>
                         <asp:TextBox class="form-control" ID="txtMID" runat="server" Required="true"></asp:TextBox>
                     </div>
+                                   <div class="form-group formgroupAdd sBtn">
+                <asp:Button class="btn btn-primary formWrapperAdd sBtn" ID="searchBtnn" runat="server" Text="Search" OnClick="btnSearch_Click" />
+                    </div>
                     <div class="form-group formgroupAdd">
                         <label for="txtName">Customer Name</label>
-                        <asp:TextBox class="form-control" ID="txtName" runat="server" Required="true"></asp:TextBox>
+                        <asp:TextBox class="form-control" ID="txtName" runat="server" ></asp:TextBox>
                     </div>
                     <div class="form-group formgroupAdd">
                         <label for="txtPhone">Phone no.</label>
-                        <asp:TextBox class="form-control" ID="txtPhone" runat="server" Required="true"></asp:TextBox>
+                        <asp:TextBox class="form-control" ID="txtPhone" runat="server"></asp:TextBox>
                     </div>
                                         <div class="form-group formgroupAdd">
-                        <label for="txtPhone">Mobile no.</label>
-                        <asp:TextBox class="form-control" ID="txtMobNo" runat="server" Required="true"></asp:TextBox>
+                        <label for="txtPhone">Mobile Name</label>
+                        <asp:TextBox class="form-control" ID="txtMobNo" runat="server" ></asp:TextBox>
                     </div>
                                                      <div class="form-group formgroupAdd">
                         <label for="txtPhone">Price</label>
-                        <asp:TextBox class="form-control" ID="txtPrice" runat="server" Required="true"></asp:TextBox>
+                        <asp:TextBox class="form-control" ID="txtPrice" runat="server" ></asp:TextBox>
                     </div>
                                          <div class="form-group formgroupAdd">
                         <label for="txtPhone">Model Name</label>
-                        <asp:TextBox class="form-control" ID="txtModel" runat="server" Required="true"></asp:TextBox>
+                        <asp:TextBox class="form-control" ID="txtModel" runat="server" ></asp:TextBox>
                     </div>
 
                                                      <div class="form-group formgroupAdd">
                         <label for="txtPhone">Bluetooth</label>
-                        <asp:TextBox class="form-control" ID="txtBt" runat="server" Required="true"></asp:TextBox>
+                        <asp:TextBox class="form-control" ID="txtBt" runat="server" ></asp:TextBox>
                     </div>
                                                          <div class="form-group formgroupAdd">
                         <label for="txtPhone">FM Radio</label>
-                        <asp:TextBox class="form-control" ID="txtFm" runat="server" Required="true"></asp:TextBox>
+                        <asp:TextBox class="form-control" ID="txtFm" runat="server" ></asp:TextBox>
                     </div>
                                                      <div class="form-group formgroupAdd">
                         <label for="txtPhone">Camera</label>
-                        <asp:TextBox class="form-control" ID="txtCamera" runat="server" Required="true"></asp:TextBox>
+                        <asp:TextBox class="form-control" ID="txtCamera" runat="server"></asp:TextBox>
                     </div>
                                                      <div class="form-group formgroupAdd">
                         <label for="txtPhone">WiFi</label>
-                        <asp:TextBox class="form-control" ID="TxtWifi" runat="server" Required="true"></asp:TextBox>
+                        <asp:TextBox class="form-control" ID="TxtWifi" runat="server" ></asp:TextBox>
                     </div>
                 </div>
                 <span id="errorContainer" runat="server"></span>

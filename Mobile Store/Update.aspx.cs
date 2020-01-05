@@ -55,5 +55,25 @@ namespace Mobile_Store
         {
 
         }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            xConn.Open();
+            int MID = Int32.Parse(txtMID.Text);
+            DataTable xTable = new DataTable();
+            new SqlDataAdapter("Select CustomerName, PhoneNo, MobileName, Price, ModelNo, Bluetooth, FMRadio,Camera, WiFi from tblRecords where MID='" + txtMID.Text + "' and isDeleted = 'NO'", xConn).Fill(xTable);
+            if (xTable.Rows.Count > 0)
+            {
+                txtName.Text = xTable.Rows[0][0].ToString();
+                txtPhone.Text = xTable.Rows[0][1].ToString();
+                txtMobNo.Text = xTable.Rows[0][2].ToString();
+                txtPrice.Text = xTable.Rows[0][3].ToString();
+                txtModel.Text = xTable.Rows[0][4].ToString();
+                txtBt.Text = xTable.Rows[0][5].ToString();
+                txtFm.Text = xTable.Rows[0][6].ToString();
+                txtCamera.Text = xTable.Rows[0][7].ToString();
+                TxtWifi.Text = xTable.Rows[0][8].ToString();
+            }
+        }
     }
 }
