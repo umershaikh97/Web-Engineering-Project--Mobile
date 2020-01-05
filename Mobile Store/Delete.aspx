@@ -42,6 +42,7 @@
 
 
         <center class="homeContent">  
+                                                <h3 id="H1" runat="server" class="display-4 headingMain">Delete Record</h3>
                     <div class="loginContainerView">
                 <div class="formWrapperView">
                     <div class="form-group formgroupView">
