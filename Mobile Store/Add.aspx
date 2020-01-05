@@ -42,6 +42,7 @@
 
 
         <center class="homeContent">  
+                                                <h3 id="H1" runat="server" class="display-4 headingMain">Add Record</h3>
                     <div class="loginContainerAdd">
                 <div class="formWrapperAdd">
                     <div class="form-group formgroupAdd">
@@ -53,7 +54,7 @@
                         <asp:TextBox class="form-control" ID="txtPhone" runat="server" Required="true"></asp:TextBox>
                     </div>
                                         <div class="form-group formgroupAdd">
-                        <label for="txtPhone">Mobile no.</label>
+                        <label for="txtPhone">Mobile Name</label>
                         <asp:TextBox class="form-control" ID="txtMobNo" runat="server" Required="true"></asp:TextBox>
                     </div>
                                                      <div class="form-group formgroupAdd">
